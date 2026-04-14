@@ -1,0 +1,15 @@
+<div class="container">
+
+  <h1>📋 Lista de Tareas</h1>
+
+  <app-task-input (addTaskEvent)="addTask($event)"></app-task-input>
+
+  <p class="total">Total tareas: {{ tasks.length }}</p>
+
+  <app-task-list 
+    [tasks]="tasks"
+    (deleteTaskEvent)="deleteTask($event)"
+    (toggleTaskEvent)="toggleTask($event)">
+  </app-task-list>
+
+</div>

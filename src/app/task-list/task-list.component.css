@@ -1,0 +1,39 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-left: 4px solid #2563eb;
+}
+
+.task span {
+  cursor: pointer;
+  color: #e2e8f0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+button {
+  background: #dc2626;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b91c1c;
+}
+
+.empty {
+  margin-top: 20px;
+  color: #64748b;
+  text-align: center;
+}

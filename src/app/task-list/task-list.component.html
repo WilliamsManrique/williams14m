@@ -1,0 +1,16 @@
+<div *ngIf="tasks.length === 0" class="empty">
+  No hay tareas registradas
+</div>
+
+<div *ngFor="let task of tasks" class="task">
+
+  <span 
+    (click)="toggleTask(task.id)"
+    [ngClass]="{ completed: task.completed }"
+  >
+    {{ task.name }}
+  </span>
+
+  <button (click)="deleteTask(task.id)">❌</button>
+
+</div>

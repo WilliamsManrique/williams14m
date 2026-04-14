@@ -1,0 +1,32 @@
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  outline: none;
+}
+
+input::placeholder {
+  color: #64748b;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  background: #2563eb; /* azul fuerte */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
